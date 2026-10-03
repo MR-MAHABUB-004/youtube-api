@@ -1,5 +1,15 @@
 {
-  "rewrites": [
-    { "source": "/dl", "destination": "/api/dl" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/dl.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/dl.js"
+    }
   ]
 }
