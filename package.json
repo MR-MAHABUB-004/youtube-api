@@ -1,8 +1,14 @@
 {
-  "name": "yt-downloader-api",
+  "name": "youtube-downloader-api",
   "version": "1.0.0",
+  "description": "YouTube downloader API for Vercel",
+  "main": "api/dl.js",
+  "scripts": {
+    "start": "node api/dl.js"
+  },
   "dependencies": {
-    "axios": "^1.6.0",
-    "form-data": "^4.0.0"
+    "axios": "^1.12.2",
+    "express": "^5.1.0",
+    "form-data": "^4.0.4"
   }
 }
